@@ -46,19 +46,6 @@ I also added a human-friendly light/dark mode toggle next to the GitHub button. 
 - Lucide React icons
 - Canvas Confetti
 
-## Run Locally
-
-```bash
-npm install
-npm run dev
-```
-
-Then open:
-
-```text
-https://muhd-talhacodey.github.io/Campus-Ledger/
-```
-
 ## Build
 
 ```bash
