@@ -1,0 +1,252 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: dark;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    font-family: "Plus Jakarta Sans", "Inter", system-ui, -apple-system, sans-serif;
+  }
+
+  body {
+    background-color: #0a0a0c;
+    color: #e4e4e7;
+    overflow-x: hidden;
+  }
+
+  html.light {
+    color-scheme: light;
+  }
+}
+
+@layer components {
+  .glass-card {
+    background: rgba(18, 18, 22, 0.7);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(212, 175, 55, 0.12);
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .glass-card:hover {
+    border-color: rgba(212, 175, 55, 0.32);
+    box-shadow: 0 12px 30px -10px rgba(212, 175, 55, 0.12);
+    transform: translateY(-2px);
+  }
+
+  .gold-gradient-text {
+    background: linear-gradient(135deg, #ffffff 0%, #ffe699 46%, #d4af37 78%, #22d3ee 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .gold-glow-btn {
+    background: linear-gradient(135deg, #d4af37 0%, #b89025 100%);
+    color: #0a0a0c;
+    box-shadow: 0 0 18px rgba(212, 175, 55, 0.28);
+    transition: all 0.25s ease-in-out;
+  }
+
+  .gold-glow-btn:hover {
+    box-shadow: 0 0 26px rgba(212, 175, 55, 0.42);
+    transform: translateY(-2px) scale(1.01);
+  }
+
+  .gold-glow-btn:active {
+    transform: translateY(0) scale(0.99);
+  }
+
+  .theme-light {
+    background: #f7f8fb;
+    color: #101828;
+  }
+
+  html.light body {
+    background: #f7f8fb;
+    color: #101828;
+  }
+
+  .theme-light [class*="bg-[#"],
+  .theme-light [class*="bg-black"],
+  .theme-light .glass-card {
+    background-color: rgba(255, 255, 255, 0.88) !important;
+    background-image: none !important;
+    color: #101828;
+  }
+
+  .theme-light [class*="bg-gradient-to"],
+  .theme-light [class*="from-[#"],
+  .theme-light [class*="via-[#"],
+  .theme-light [class*="to-[#"] {
+    background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(240, 244, 249, 0.92)) !important;
+    background-color: rgba(255, 255, 255, 0.92) !important;
+  }
+
+  .theme-light [class*="text-white"],
+  .theme-light [class*="text-[#E4E4E7]"],
+  .theme-light [class*="text-zinc-200"],
+  .theme-light [class*="text-zinc-300"] {
+    color: #101828 !important;
+  }
+
+  .theme-light [class*="text-zinc-400"],
+  .theme-light [class*="text-zinc-500"],
+  .theme-light [class*="text-zinc-600"] {
+    color: #667085 !important;
+  }
+
+  .theme-light [class*="border-white"] {
+    border-color: rgba(16, 24, 40, 0.1) !important;
+  }
+
+  .theme-light [class*="shadow-2xl"],
+  .theme-light [class*="shadow-xl"],
+  .theme-light [class*="shadow-gold"] {
+    box-shadow: 0 14px 40px rgba(16, 24, 40, 0.08) !important;
+  }
+
+  .theme-light input,
+  .theme-light select,
+  .theme-light textarea {
+    background: #ffffff !important;
+    color: #101828 !important;
+    border-color: rgba(16, 24, 40, 0.16) !important;
+  }
+
+  .theme-light input::placeholder,
+  .theme-light textarea::placeholder {
+    color: #98a2b3 !important;
+  }
+
+  .theme-light pre,
+  .theme-light code {
+    color: #344054;
+  }
+
+  .theme-light .line-through {
+    color: #b42318 !important;
+  }
+
+  .theme-light .gold-glow-btn {
+    color: #101828 !important;
+  }
+
+  .theme-light .fixed.inset-0 {
+    background: rgba(16, 24, 40, 0.28) !important;
+  }
+
+  .theme-light .gold-gradient-text {
+    background: linear-gradient(135deg, #101828 0%, #806921 45%, #0e7490 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+@layer utilities {
+  .h-18 {
+    height: 4.5rem;
+  }
+
+  .scale-102 {
+    transform: scale(1.02);
+  }
+
+  .animate-fadeIn {
+    animation: fadeIn 0.35s ease-out both;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(8px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+html.light,
+html.light body,
+.theme-light {
+  background: #f7f8fb !important;
+  color: #101828 !important;
+}
+
+.theme-light [class*="bg-[#"],
+.theme-light [class*="bg-black"],
+.theme-light .glass-card {
+  background-color: rgba(255, 255, 255, 0.9) !important;
+  background-image: none !important;
+  color: #101828 !important;
+}
+
+.theme-light [class*="bg-gradient-to"],
+.theme-light [class*="from-[#"],
+.theme-light [class*="via-[#"],
+.theme-light [class*="to-[#"] {
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(239, 244, 249, 0.94)) !important;
+  background-color: rgba(255, 255, 255, 0.94) !important;
+}
+
+.theme-light [class*="text-white"],
+.theme-light [class*="text-[#E4E4E7]"],
+.theme-light [class*="text-zinc-200"],
+.theme-light [class*="text-zinc-300"] {
+  color: #101828 !important;
+}
+
+.theme-light [class*="text-zinc-400"],
+.theme-light [class*="text-zinc-500"],
+.theme-light [class*="text-zinc-600"] {
+  color: #667085 !important;
+}
+
+.theme-light [class*="text-gold-"] {
+  color: #8a6a0a !important;
+}
+
+.theme-light [class*="text-amber-"] {
+  color: #92400e !important;
+}
+
+.theme-light [class*="border-white"] {
+  border-color: rgba(16, 24, 40, 0.1) !important;
+}
+
+.theme-light [class*="shadow-2xl"],
+.theme-light [class*="shadow-xl"],
+.theme-light [class*="shadow-gold"] {
+  box-shadow: 0 14px 40px rgba(16, 24, 40, 0.08) !important;
+}
+
+.theme-light input,
+.theme-light select,
+.theme-light textarea {
+  background: #ffffff !important;
+  color: #101828 !important;
+  border-color: rgba(16, 24, 40, 0.16) !important;
+}
+
+.theme-light input::placeholder,
+.theme-light textarea::placeholder {
+  color: #98a2b3 !important;
+}
+
+.theme-light .gold-gradient-text {
+  background: linear-gradient(135deg, #101828 0%, #806921 45%, #0e7490 100%) !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+}
+
+.theme-light .gold-glow-btn {
+  color: #101828 !important;
+}
