@@ -4,10 +4,6 @@ Campus Ledger is a university micro-internship and campus bounty board that help
 
 ![Campus Ledger preview](assets/campus-ledger-preview.png)
 
-## Website Link
-
-- Live site: https://muhd-talhacodey.github.io/Campus-Ledger/
-
 ## Problem
 
 University departments, student societies, labs, and administrative teams often have small technical tasks that are important but too small for a formal vendor contract. Examples include fixing event forms, optimizing a database query, setting up webhook alerts, improving a dashboard, or automating a manual spreadsheet workflow.
