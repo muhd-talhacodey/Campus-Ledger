@@ -4,9 +4,8 @@ Campus Ledger is a university micro-internship and campus bounty board that help
 
 ![Campus Ledger preview](assets/campus-ledger-preview.png)
 
-## Links
+## Website Link
 
-- Repository: https://github.com/muhd-talhacodey/Campus-Ledger
 - Live site: https://muhd-talhacodey.github.io/Campus-Ledger/
 
 ## Problem
