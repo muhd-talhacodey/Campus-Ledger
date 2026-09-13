@@ -56,7 +56,7 @@ npm run dev
 Then open:
 
 ```text
-http://localhost:5173/
+https://muhd-talhacodey.github.io/Campus-Ledger/
 ```
 
 ## Build
