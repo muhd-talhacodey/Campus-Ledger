@@ -38,17 +38,6 @@ The project uses a `+twe` theme approach through Tailwind CSS extension. I used 
 
 I also added a human-friendly light/dark mode toggle next to the GitHub button. The dark theme keeps the original premium ledger look, while the light theme overrides the dark surface utilities for a cleaner daytime presentation without rebuilding every component.
 
-## Key Updates in This Version
-
-- Replaced `All Statuses` with `Status`.
-- Removed the protocol/version line from the hero.
-- Replaced the problem and solution eyebrow labels with simpler human wording.
-- Removed point rewards and changed reward choices to cash or gift cards.
-- Reduced the heavy yellow/gold effect near the logo.
-- Updated visible performance language from 60 FPS to 120 FPS.
-- Removed footer ledger consensus, block number, performance badges, and integrations.
-- Added a dedicated light/dark mode button beside the GitHub button.
-
 ## Tech Stack
 
 - React
