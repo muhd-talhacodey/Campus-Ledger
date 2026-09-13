@@ -46,10 +46,8 @@ I also added a human-friendly light/dark mode toggle next to the GitHub button. 
 - Lucide React icons
 - Canvas Confetti
 
-## Build
+## Website Link
 
 ```bash
-npm run build
+https://muhd-talhacodey.github.io/Campus-Ledger/
 ```
-
-The production build is generated in `dist/`.
